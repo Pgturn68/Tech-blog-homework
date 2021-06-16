@@ -1,40 +1,6 @@
 # Tech Blog
-  A MySQL database and CMS-style blog structured using a Model View Controller (MVC) paradigm. Handlebars.js is the templating language, Sequelize is the ORM, and authentication is achieved through the express-session npm package.
-  Site is deployed at [heroku](https://thawing-gorge-89250.herokuapp.com/)
-
-  <img src = "assets\screenshot.JPG" alt="screenshot" />
-
-  ## Badges 
-  [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-
-  ## Table of Contents 
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributions](#contributions)
-  * [Test](#test)
-  * [License](#license)
-  * [Questions](#questions)
-
-  ## Installation
-  * `npm init`
-  * `npm install`  
-  ## Usage
- In your command prompt, run 
- * `mysql -u root -p`
-Enter your MySQL password. Then run:
-* `source db/schema.sql`
-* `quit`
-* `npm start`
-
-## Contributions
-  None at this time
-  
-## Test
-  Run test through jest
-
-## License
-  Licensed under the Unlicense license
-
-## Questions
-  Have any questions? Email me at roxanna.vaught@gmail.com
+ 
+ The application’s folder structure follows the Model-View-Controller paradigm.The express-handlebars package is used to implement Handlebars.js for your Views,  the MySQL2 and Sequelize packages used to connect to a MySQL database for the Models, Express.js API  used for the Controllers.
+ dotenv package is use to use environment variables, the bcrypt package to hash passwords, and the express-session and connect-session-sequelize packages to add authentication.
+ 
+Note: The express-session package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
