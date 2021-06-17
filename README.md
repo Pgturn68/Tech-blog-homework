@@ -1,3 +1,6 @@
+## NOTE: This is still a work in progress,Heroku is throwing a --tail error when I try to upload.
+
+
 # Tech Blog
  
  The application’s folder structure follows the Model-View-Controller paradigm.The express-handlebars package is used to implement Handlebars.js for your Views,  the MySQL2 and Sequelize packages used to connect to a MySQL database for the Models, Express.js API  used for the Controllers.
